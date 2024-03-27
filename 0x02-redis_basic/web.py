@@ -6,6 +6,7 @@ import requests
 from functools import wraps
 from typing import Callable
 
+
 redis_store = redis.Redis()
 '''The module-level Redis instance.
 '''
@@ -34,4 +35,4 @@ def get_page(url: str) -> str:
     '''Returns the content of a URL after caching the request's response,
     and tracking the request.
     '''
-    return requests.get(url).text
+    return requests.get(url).t
